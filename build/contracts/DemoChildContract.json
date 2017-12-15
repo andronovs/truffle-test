@@ -1,0 +1,113 @@
+{
+  "contract_name": "DemoChildContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_data",
+          "type": "uint256"
+        }
+      ],
+      "name": "setChildData",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getChildData",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "addChildValue",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getChildValue",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_msg",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_data",
+          "type": "uint256"
+        }
+      ],
+      "name": "ChildDataUpdated",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6101a48061001f6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166317dff0da811461005e57806382722bd7146100765780639b97e5901461009b578063cfd11016146100b3575b600080fd5b341561006957600080fd5b6100746004356100d8565b005b341561008157600080fd5b61008961015e565b60405190815260200160405180910390f35b34156100a657600080fd5b610074600435610165565b005b34156100be57600080fd5b610089610171565b60405190815260200160405180910390f35b60008190558073ffffffffffffffffffffffffffffffffffffffff33167fb0acc8df7a1a83c40581688562002c2b83f01d35a3373fe15f64d871ca1cc19960405160208082526015908201527f4368696c64206461746120757064617465642e2e2e00000000000000000000006040808301919091526060909101905180910390a35b50565b6000545b90565b60018054820190555b50565b6001545b905600a165627a7a72305820b07148299edbce108528bf7c939af30ecc54ce6847ad25bbfc267c702f38ae200029",
+  "networks": {
+    "1513350305189": {
+      "events": {
+        "0xb0acc8df7a1a83c40581688562002c2b83f01d35a3373fe15f64d871ca1cc199": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_msg",
+              "type": "string"
+            },
+            {
+              "indexed": true,
+              "name": "_addr",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_data",
+              "type": "uint256"
+            }
+          ],
+          "name": "ChildDataUpdated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xcaa1960b2bb777432256921a599804fa9a56a357",
+      "updated_at": 1513350311265
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1513350311265
+}

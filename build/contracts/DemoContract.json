@@ -1,0 +1,123 @@
+{
+  "contract_name": "DemoContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getValue",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getData",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_data",
+          "type": "uint256"
+        }
+      ],
+      "name": "setData",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "addValue",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_demoChildContractAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_msg",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_data",
+          "type": "uint256"
+        }
+      ],
+      "name": "DataUpdated",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b60405160208061058e833981016040528080519150505b600160a060020a038116151561003b57600080fd5b610043610080565b604051809103906000f080151561005957600080fd5b60008054600160a060020a031916600160a060020a03929092169190911790555b50610090565b6040516101c3806103cb83390190565b61032c8061009f6000396000f300606060405263ffffffff60e060020a6000350416632096525581146100455780633bc5de301461006a5780635b4b73a91461008f5780635b9af12b146100a7575b600080fd5b341561005057600080fd5b6100586100bf565b60405190815260200160405180910390f35b341561007557600080fd5b610058610134565b60405190815260200160405180910390f35b341561009a57600080fd5b6100a56004356101a9565b005b34156100b257600080fd5b6100a5600435610293565b005b6000805473ffffffffffffffffffffffffffffffffffffffff1663cfd1101682604051602001526040518163ffffffff1660e060020a028152600401602060405180830381600087803b151561011457600080fd5b6102c65a03f1151561012557600080fd5b50505060405180519150505b90565b6000805473ffffffffffffffffffffffffffffffffffffffff166382722bd782604051602001526040518163ffffffff1660e060020a028152600401602060405180830381600087803b151561011457600080fd5b6102c65a03f1151561012557600080fd5b50505060405180519150505b90565b60005473ffffffffffffffffffffffffffffffffffffffff166317dff0da8260405160e060020a63ffffffff84160281526004810191909152602401600060405180830381600087803b15156101fe57600080fd5b6102c65a03f1151561020f57600080fd5b505050803373ffffffffffffffffffffffffffffffffffffffff167fd35799fc5b255580f229526ce702762b24453c2ec69640afff8d1fc80a1a40926040516020808252600f908201527f4461746120757064617465642e2e2e00000000000000000000000000000000006040808301919091526060909101905180910390a35b50565b60005473ffffffffffffffffffffffffffffffffffffffff16639b97e5908260405160e060020a63ffffffff84160281526004810191909152602401600060405180830381600087803b15156102e857600080fd5b6102c65a03f115156102f957600080fd5b5050505b505600a165627a7a7230582064ff450aaeea64141f880cc499fe74c649e53248bd79750a2aa132cca6a759ce00296060604052341561000f57600080fd5b5b6101a48061001f6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166317dff0da811461005e57806382722bd7146100765780639b97e5901461009b578063cfd11016146100b3575b600080fd5b341561006957600080fd5b6100746004356100d8565b005b341561008157600080fd5b61008961015e565b60405190815260200160405180910390f35b34156100a657600080fd5b610074600435610165565b005b34156100be57600080fd5b610089610171565b60405190815260200160405180910390f35b60008190558073ffffffffffffffffffffffffffffffffffffffff33167fb0acc8df7a1a83c40581688562002c2b83f01d35a3373fe15f64d871ca1cc19960405160208082526015908201527f4368696c64206461746120757064617465642e2e2e00000000000000000000006040808301919091526060909101905180910390a35b50565b6000545b90565b60018054820190555b50565b6001545b905600a165627a7a72305820b07148299edbce108528bf7c939af30ecc54ce6847ad25bbfc267c702f38ae200029",
+  "networks": {
+    "1513350305189": {
+      "events": {
+        "0xd35799fc5b255580f229526ce702762b24453c2ec69640afff8d1fc80a1a4092": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_msg",
+              "type": "string"
+            },
+            {
+              "indexed": true,
+              "name": "_addr",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_data",
+              "type": "uint256"
+            }
+          ],
+          "name": "DataUpdated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x997ec7678005d6521ba0b99e95ef0f3d84d1b7a8",
+      "updated_at": 1513350311265
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1513350311265
+}
